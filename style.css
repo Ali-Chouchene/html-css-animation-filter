@@ -48,17 +48,19 @@
     border-radius: 50%;
 }
 
+/*EX4*/
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
-    transition: opacity 4s;
+    transition: opacity 3s;
 }
 
 .ex-4-square:hover {
     opacity: 0;
 }
 
+/*EX5*/
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -77,8 +79,26 @@
     height: 40px;
 }
 
-.ex-6-img,
-.ex-7-img,
+/*EX6*/
+.ex-6-img {
+    width: 500px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/*EX7*/
+.ex-7-img {
+    width: 500px;
+    transition: filter 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+}
+
+
 .ex-8-img {
     width: 500px;
 }

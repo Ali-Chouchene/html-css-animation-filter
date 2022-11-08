@@ -146,6 +146,7 @@
     }
 }
 
+/*EX11*/
 .ex-11-icon {
     font-size: 60px;
 
@@ -172,6 +173,7 @@
     }
 }
 
+/*EX12*/
 .ex-12-button {
     position: relative;
     display: block;
@@ -193,7 +195,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition: left 1.5s linear;
+
 }
 
 .ex-12-bottom-white {
@@ -203,19 +205,48 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    transition: right 1.5s linear;
+
+
 }
 
 .ex-12-button:hover .ex-12-top-white {
-    left: 65%;
+    animation: spin 2s;
+}
 
+@keyframes spin {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    100% {
+        left: 10%;
+    }
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-    right: 65%;
-
+    animation: spin-1 2s;
 }
 
+@keyframes spin-1 {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: 60%;
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+/*EX13*/
+/*NON SONO RIUSCITO A FARLO*/
 .ex-13-button {
     position: relative;
     display: block;
@@ -240,10 +271,6 @@
 
 }
 
-
-
-
-
 .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -252,4 +279,65 @@
     width: 60px;
     height: 20px;
 
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: spin-2 2s;
+}
+
+@keyframes spin-2 {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    25% {
+        left: 30%;
+        top: -10px;
+    }
+
+    50% {
+        left: 60%;
+        top: 10px;
+    }
+
+    75% {
+        left: 80%;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: spin-3 2s;
+}
+
+@keyframes spin-3 {
+    0% {
+        right: 10%;
+        bottom: -10px;
+    }
+
+    25% {
+        right: 30%;
+        bottom: -10px;
+    }
+
+    50% {
+        right: 60%;
+        bottom: 10px;
+    }
+
+    75% {
+        right: 80%;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 10%;
+        bottom: -10px;
+    }
 }
